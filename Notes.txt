@@ -1,0 +1,23 @@
+				IT215
+
+Memory is called volatile because when there is sudden power cut, we would lose all the information, process currently active on system.
+
+Library calls in general, by default does not involve the change of mode i.g., user mode to kernal mode (and return back). So, it's exectution is faster than those of system calls using system service.
+
+Library calls are portable while sysetm calls are not. As system calls changes OS to OS, while Library calls remains same everywhere.
+
+Programs and Proecess are two different entity.
+Programs: Any collection of source code information
+Process: Running state of programs, so it uses primary memory.
+
+IPC: 
+Upadated Simaphore - that's counting Simaphore is NON - BLOCKING Version of Simple basic simaphore. 
+
+Problem in approaches: 
+1. Cond 2 - no progress.
+2. Cond 3 - not bounded wait.
+3. All Cond are satisfied.
+
+In default Simaphore firstly is spines(move over there) through the while loop untill the condition (s <= 0) is met and after that value of s variable is updated, So this version also called SPIN - SIMAPHORE. And counting simaphore is NON-SPIN SIMAPHORE version. 
+
+We can precede some process over other, this can be done using SYNC - SIMAPHORE.
